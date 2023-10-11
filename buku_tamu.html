@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Membuat Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="mb-4">Form Buku Tamu</h2>
+      <form>
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan Nama"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Jenis Kelamin:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="jenis_kelamin"
+              id="laki"
+              value="L"
+              checked
+            />
+            <label class="form-check-label" for="laki">Laki-laki</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="jenis_kelamin"
+              id="perempuan"
+              value="P"
+            />
+            <label class="form-check-label" for="perempuan">Perempuan</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat Tinggal:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="alamat"
+            name="alamat"
+            placeholder="Masukkan Alamat"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Email:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="sosmed[]"
+              value="facebook"
+              checked
+            />
+            <label class="form-check-label">Facebook</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="sosmed[]"
+              value="twitter"
+            />
+            <label class="form-check-label">Twitter</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="sosmed[]"
+              value="instagram"
+            />
+            <label class="form-check-label">Instagram</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="sosmed[]"
+              value="path"
+            />
+            <label class="form-check-label">Path</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="info">Mengetahui web ini dari:</label>
+          <select class="form-control" id="info" name="info">
+            <option selected disabled>-= Pilih =-</option>
+            <option value="web">Web</option>
+            <option value="surat kabar">Surat Kabar</option>
+            <option value="teman kerabat">Teman/Kerabat</option>
+            <option value="browsing internet">Browsing Internet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan:</label>
+          <textarea
+            class="form-control"
+            id="pesan"
+            name="pesan"
+            rows="5"
+            placeholder="Masukkan Pesan"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
